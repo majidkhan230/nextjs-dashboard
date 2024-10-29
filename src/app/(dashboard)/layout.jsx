@@ -1,3 +1,5 @@
+import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,9 +13,11 @@ const Dashboardlayout = ({ children }) => {
 <Image src="/logo.png" alt="logo" width={32} height={32}></Image>
 <span className="hidden md:block font-bold">APS School</span>
 </Link>
+<Menu/>
       </div>
       {/* RIGHT */}
       <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
+        <Navbar/>
       {children}
       </div>
     </div>
