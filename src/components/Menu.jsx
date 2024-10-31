@@ -124,11 +124,11 @@ const Menu = () => {
                
                 return(
                     <div key={index}>
-                        <span className='hidden md:block text-gray-400 font-light '>{title}</span>
+                        <span className='hidden md:block text-gray-400 font-light text-sm px-1 py-1 '>{title}</span>
                        {items.map(({icon,label,href,visible},index)=>{
                         return (
-                           <Link href={href} key={index} className='flex justify-center items-center lg:justify-start gap-2 mt-2 text-sm hover:bg-gray-200 hover:rounded-md'>  
-                           <Image src={icon} alt='img' width={20} height={20}></Image>
+                           <Link href={href} key={index} className='flex justify-center items-center lg:justify-start gap-2 px-1 py-1  text-sm hover:bg-gray-200 hover:rounded-md '>  
+                           <Image src={icon} alt='img' width={16} height={16}></Image>
                            <span className='hidden lg:block'>{label}</span>
                             </Link>
                         )

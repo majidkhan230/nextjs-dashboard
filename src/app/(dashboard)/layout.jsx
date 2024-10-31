@@ -8,7 +8,7 @@ const Dashboardlayout = ({ children }) => {
   return (
     <div className="w-full h-screen flex ">
       {/* LEFT */}
-      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4">
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-2">
 <Link href={"/"} className="flex justify-center lg:justify-start items-center gap-2 ">
 <Image src="/logo.png" alt="logo" width={32} height={32}></Image>
 <span className="hidden md:block font-bold">APS School</span>
